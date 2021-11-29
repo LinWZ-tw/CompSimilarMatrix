@@ -32,4 +32,5 @@ for i in range (listlen):
         score = DataStructs.TanimotoSimilarity(fp1,fp2)
         data.loc[comp_list[i], comp_list[j]] = score
         data.loc[comp_list[j], comp_list[i]] = score
+print (data)
 data.to_excel('CompoundSimilarityMatrix.xlsx') #output data
